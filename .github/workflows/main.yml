@@ -16,3 +16,7 @@ jobs:
       run: python -V
     - name: 파이썬 실행!!
       run: python test.py
+
+    - name: 파일찾기!!
+      run: find / -name 'test.py'
+
