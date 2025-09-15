@@ -14,9 +14,13 @@ jobs:
       run: ls -al
     - name: 파이썬 버전 출력!!
       run: python -V
+      
+    - name: 파이썬 패키지 확인!!
+      run: pip list
+      
     - name: 파이썬 실행!!
       run: python test.py
 
-    - name: 파일찾기!!
-      run: sudo find / -name 'test.py'
+    #- name: 파일찾기!!
+    #  run: sudo find / -name 'test.py'
 
