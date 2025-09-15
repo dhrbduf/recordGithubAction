@@ -18,5 +18,5 @@ jobs:
       run: python test.py
 
     - name: 파일찾기!!
-      run: find / -name 'test.py'
+      run: sudo find / -name 'test.py'
 
