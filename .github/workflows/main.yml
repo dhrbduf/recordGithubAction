@@ -3,7 +3,7 @@ name: helloGithubAction
 on: [push]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Github Repository 파일 불러오기
