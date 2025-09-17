@@ -6,8 +6,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Github Repository 파일 불러오기
+    - uses: actions/checkout@v4
 
+    - name: Node 설치
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+
+    - name: 의존성(라이브러리) 설치
+      run: npm ci
+    
     - name: 테스트 코드 실행
       run: npm run build
 
